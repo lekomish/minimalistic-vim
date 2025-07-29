@@ -49,6 +49,19 @@ nnoremap <leader>rw :%s/\<<c-r><c-w>\>//g<left><left>
 nnoremap <leader>sw <cmd>echo "Press a character: " \| let c = nr2char(getchar()) \| exec "normal viwo\ei" . c . "\eea" . c . "\e" \| redraw<CR>
 
 "
+" =========================== Clipboard ===========================
+"
+if executable('xclip')
+  " Copy to X11 clipboard
+  map <C-c> :w !xclip -sel clip<CR><CR>
+  map <C-v> :r !xclip -sel clip -o<CR>
+else
+  " Fallback for Vim's clipboard
+  map <C-c> "+y
+  map <C-v> "+P
+endif
+
+"
 " =========================== Shortcuts ===========================
 "
 nnoremap ; :
