@@ -83,6 +83,7 @@ git clone https://github.com/lekomish/minimalistic-vim.git ~/.config/vim
 ## Philosophy
 
 This configuration follows these principles:
+
 1. **Minimalism** - No plugins, only essential features
 2. **Transparency** - All code is documented
 3. **Keyboard-first** - Optimized for hands-one-home-row usage
@@ -97,6 +98,7 @@ Create `~/.config/vim/conf.d/99-local.vim` for personal overrides that won't be 
 ### Temporary Files
 
 All temporary files are stored in `/tmp/vim/`:
+
 - Netrw history: `/tmp/vim/netrw`
 - Undo history: `/tmp/vim/undo`
 
@@ -107,7 +109,7 @@ All temporary files are stored in `/tmp/vim/`:
 ├── vimrc                       # Main entry point
 └── conf.d/
     ├── 00-settings.vim         # Core settings
-    ├── 10-mappings.vim         # Key bindings  
+    ├── 10-mappings.vim         # Key bindings
     ├── 20-autocomplete.vim     # Tab completion
     ├── 30-filetype.vim         # Language-specific rules
     └── 40-statusline.vim       # Status bar
