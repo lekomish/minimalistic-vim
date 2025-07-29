@@ -35,6 +35,19 @@ nnoremap <leader>bd :bdelete<CR>
 " Delete all buffers
 nnoremap <leader>ba :bufdo bdelete<CR>
 
+
+"
+" =========================== Text manipulation ===========================
+"
+" Move visual selection down
+vnoremap J :m '>+1<CR>gv=gv
+" Move visual seletion up
+vnoremap K :m '>-2<CR>gv=gv
+" Replace current word
+nnoremap <leader>rw :%s/\<<c-r><c-w>\>//g<left><left>
+" Wrap selection
+nnoremap <leader>sw <cmd>echo "Press a character: " \| let c = nr2char(getchar()) \| exec "normal viwo\ei" . c . "\eea" . c . "\e" \| redraw<CR>
+
 "
 " =========================== Shortcuts ===========================
 "
