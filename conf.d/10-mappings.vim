@@ -34,3 +34,14 @@ nnoremap <leader>f :tabedit<space>
 nnoremap <leader>bd :bdelete<CR>
 " Delete all buffers
 nnoremap <leader>ba :bufdo bdelete<CR>
+
+"
+" =========================== Shortcuts ===========================
+"
+nnoremap ; :
+vnoremap ; :
+
+" Toggle spellcheck
+nnoremap <leader>sc :setlocal spell! spelllang=en_us<CR>
+" Show registers
+nnoremap <leader>r <cmd>registers<CR>
