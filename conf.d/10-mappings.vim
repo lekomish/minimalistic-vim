@@ -12,8 +12,10 @@ nnoremap <c-k> <c-w>k
 nnoremap <c-h> <c-w>h
 " Move to right window
 nnoremap <c-l> <c-w>l
-" Next tab
-nnoremap <Tab> gt
+" Vertical split window
+map <c-w>v :vsplit<space>
+" Horizontal split window
+map <c-w>h :split<space>
 
 "
 " =========================== File operations ===========================
@@ -34,6 +36,8 @@ nnoremap <leader>f :tabedit<space>
 nnoremap <leader>bd :bdelete<CR>
 " Delete all buffers
 nnoremap <leader>ba :bufdo bdelete<CR>
+" Next tab
+nnoremap <Tab> gt
 
 "
 " =========================== Terminal ===========================
