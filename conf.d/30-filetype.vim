@@ -7,6 +7,12 @@ autocmd FileType markdown setlocal wrap linebreak nolist
   " - Disable visible whitespace
 
 "
+" =========================== Python ===========================
+"
+autocmd FileType python setlocal foldmethod=indent
+  " - Fold based on indentation levels
+
+"
 " =========================== Universal formatting ===========================
 "
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
