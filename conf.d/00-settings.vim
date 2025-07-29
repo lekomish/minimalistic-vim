@@ -37,6 +37,22 @@ set ignorecase  " Case-insensitive search
 set smartcase   " Case-sensitive if search contains uppercase
 
 "
+" =========================== Backup/Undo ===========================
+"
+set undodir=/tmp/vim/undo         " Undo file persistence location
+set undofile                      " Maintain undo history between sessions
+set undoreload=10000              " Max lines to save for undo
+set nobackup nowritebackup        " Disable backup files
+let g:netrw_home='/tmp/vim/netrw' " Netrw history file configuration
+
+" Create necessary directories
+if !isdirectory('/tmp/vim')
+  call mkdir('/tmp/vim', 'p')
+  call mkdir('/tmp/vim/undo', 'p')
+  call mkdir('/tmp/vim/netrw', 'p', 0700)
+endif
+
+"
 " =========================== Miscellaneous ===========================
 "
 set history=1000                                    " Command history length
