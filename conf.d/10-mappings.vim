@@ -35,6 +35,15 @@ nnoremap <leader>bd :bdelete<CR>
 " Delete all buffers
 nnoremap <leader>ba :bufdo bdelete<CR>
 
+"
+" =========================== Terminal ===========================
+"
+if has('terminal')
+  " Ctrl+T to open terminal
+  map <C-t> :ter<CR>
+  " Exit terminal
+  tnoremap <C-t> exit<CR>
+endif
 
 "
 " =========================== Text manipulation ===========================
