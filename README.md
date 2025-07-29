@@ -6,7 +6,7 @@ A lightweight, plugin-free Vim configuration focused on core functionality and k
 
 ```bash
 mkdir -p ~/.config/vim
-git clone https://github.com/lekomish/vim.git ~/.config/vim
+git clone https://github.com/lekomish/minimalistic-vim.git ~/.config/vim
 ```
 
 ## Requirements
