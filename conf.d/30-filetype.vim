@@ -1,4 +1,12 @@
 "
+" =========================== Markdown ===========================
+"
+autocmd FileType markdown setlocal wrap linebreak nolist
+  " - Soft-wrap text
+  " - Break at word boundaries
+  " - Disable visible whitespace
+
+"
 " =========================== Universal formatting ===========================
 "
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
